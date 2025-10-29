@@ -2,7 +2,7 @@ Object segundoElementoV1(List lista) {
   return lista.length >= 2 ? lista[1] : null;
 }
 
-E segundoElementoV2<E>(List<E> lista) {
+E? segundoElementoV2<E>(List<E> lista) {
   return lista.length >= 2 ? lista[1] : null;
 }
 
@@ -11,7 +11,7 @@ void main(List<String> args) {
 
   print(segundoElementoV1(lista));
 
-  int segundoElemento = segundoElementoV2<int>(lista);
+  int? segundoElemento = segundoElementoV2<int>(lista);
   print(segundoElemento);
 
   segundoElemento = segundoElementoV2(lista);
